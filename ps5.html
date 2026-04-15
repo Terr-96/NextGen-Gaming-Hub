@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 5 | NextGen Gaming Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 55, 145, 0.82), rgba(0, 0, 0, 0.75)),
+                        url('https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+
+        .feature-card, .game-card {
+            border: none;
+            border-radius: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .feature-card:hover, .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15) !important;
+        }
+
+        .btn-round {
+            border-radius: 50px;
+            padding: 10px 25px;
+            font-weight: 600;
+        }
+
+        .ps-box {
+            background: white;
+            border-radius: 25px;
+            padding: 35px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+
+        .spec-item {
+            padding: 15px;
+            border-radius: 15px;
+            background-color: #f1f4f9;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">NextGen Gaming</a>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" href="ps5.html">PS5</a>
+            <a class="nav-link" href="wishlist.html">Wishlist</a>
+            <a class="nav-link" href="cart.html">
+
+                <i class="bi bi-cart3" style="font-size: 1.2rem;"></i></a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero text-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold">PlayStation 5</h1>
+        <p class="lead">Discover immersive gaming, ultra-fast performance, and next-level entertainment.</p>
+        <button class="btn btn-light btn-round mt-3" onclick="addToWishlist('PS5')">Add PS5 to Wishlist</button>
+    </div>
+</header>
+
+<main class="container my-5">
+
+    <section class="ps-box mb-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="fw-bold mb-3" style="color:#003791;">Why Choose PS5?</h2>
+                <p class="text-muted">
+                    PlayStation 5 delivers a premium gaming experience with high-speed SSD technology,
+                    realistic graphics, advanced haptic feedback, and exclusive blockbuster titles.
+                    It is designed for players who want performance, immersion, and entertainment in one console.
+                </p>
+                <button class="btn btn-primary btn-round mt-2" onclick="addToWishlist('PS5')">Save to Wishlist</button>
+            </div>
+            <div class="col-lg-6">
+                <div class="spec-item"><strong>Ultra-High Speed SSD:</strong> Faster game loading and seamless transitions.</div>
+                <div class="spec-item"><strong>4K Graphics:</strong> Stunning visuals for a more realistic gaming experience.</div>
+                <div class="spec-item"><strong>DualSense Controller:</strong> Haptic feedback and adaptive triggers for immersion.</div>
+                <div class="spec-item"><strong>Exclusive Titles:</strong> Enjoy PlayStation-only games and adventures.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h2 class="fw-bold text-center mb-4">Key Features</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card feature-card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold" style="color:#003791;">Powerful Performance</h4>
+                        <p class="text-muted">PS5 is built to deliver smooth gameplay, fast rendering, and responsive control.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold" style="color:#003791;">Immersive Gameplay</h4>
+                        <p class="text-muted">Experience deeper interaction through adaptive triggers and realistic haptic feedback.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold" style="color:#003791;">Stunning Visuals</h4>
+                        <p class="text-muted">Enjoy beautiful environments and detailed effects with advanced graphics technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h2 class="fw-bold text-center mb-4">Popular PS5 Games</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card game-card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Spider-Man 2</h5>
+                        <p class="text-muted">A fast-paced superhero adventure with stunning visuals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card game-card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">God of War Ragnarök</h5>
+                        <p class="text-muted">An epic action game with emotional storytelling and combat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card game-card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Horizon Forbidden West</h5>
+                        <p class="text-muted">Explore a beautiful open world full of machines and adventure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card game-card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Final Fantasy XVI</h5>
+                        <p class="text-muted">A fantasy action RPG with cinematic battles and deep storytelling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<div class="modal fade" id="wishlistModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow-lg" style="border-radius: 25px; border: none; overflow: hidden;">
+            <div class="modal-header bg-dark text-white border-0">
+                <h5 class="modal-title fw-bold">Wishlist Update</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center p-5">
+                <div id="modal-icon" style="font-size: 4rem; margin-bottom: 20px;"></div>
+                <h4 id="modal-message" class="fw-bold"></h4>
+            </div>
+            <div class="modal-footer border-0 justify-content-center pb-4">
+                <button type="button" class="btn btn-dark btn-round px-5" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2026 NextGen Gaming Hub | PS5 Page</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function addToWishlist(consoleName) {
+        let list = JSON.parse(localStorage.getItem('wishlist')) || [];
+        let myModal = new bootstrap.Modal(document.getElementById('wishlistModal'));
+        let icon = document.getElementById('modal-icon');
+        let msg = document.getElementById('modal-message');
+
+        if (!list.includes(consoleName)) {
+            list.push(consoleName);
+            localStorage.setItem('wishlist', JSON.stringify(list));
+            icon.innerHTML = "✅";
+            icon.style.color = "#28a745";
+            msg.innerHTML = consoleName + " added to your Wishlist!";
+            msg.style.color = "#28a745";
+        } else {
+            icon.innerHTML = "ℹ️";
+            icon.style.color = "#ffc107";
+            msg.innerHTML = consoleName + " is already in your wishlist.";
+            msg.style.color = "#333";
+        }
+
+        myModal.show();
+    }
+</script>
+
+</body>
+</html>
